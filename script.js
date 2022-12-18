@@ -28,3 +28,8 @@ btnsArr.forEach(element => {
         console.log(str)
     })
 });
+
+clearBtn.addEventListener('click',() => {
+    str = ''
+    console.log(str)
+})
