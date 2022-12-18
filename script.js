@@ -25,11 +25,15 @@ btnsArr.forEach(element => {
         } else {
             str+=element.innerText
         }
-        console.log(str)
     })
 });
 
 clearBtn.addEventListener('click',() => {
     str = ''
-    console.log(str)
+})
+
+equalsBtn.addEventListener('click',() => {
+    //I have used eval for this project FOR TESTING PURPOSES ONLY
+    val = eval(str)
+    str = val.toString()
 })
